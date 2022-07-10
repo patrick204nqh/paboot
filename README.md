@@ -10,3 +10,8 @@ cp .env.example .env
 docker build --no-cache -t patrick204nqh/paboot .
 docker-compose up -d
 ```
+
+- Run server
+```
+./gradlew bootRun 
+```
