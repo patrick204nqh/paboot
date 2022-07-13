@@ -4,8 +4,9 @@ WORKDIR /var/www/backend
 
 COPY . ./
 
-RUN gradle build --no-daemon
+RUN chmod +x ./gradlew
+RUN ./gradlew build
 
 EXPOSE 8080
 
-ENTRYPOINT gradle bootRun
+ENTRYPOINT ./gradlew bootRun

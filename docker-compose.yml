@@ -5,11 +5,10 @@ services:
   spring:
     image: patrick204nqh/paboot:latest
     container_name: paboot-spring
+    entrypoint: ./gradlew bootRun
     stdin_open: true
     tty: true
     env_file: .env
-    environment:
-      GRADLE_OPTS: -Dorg.gradle.daemon=true
     ports:
       - 8080:8080
     volumes:
