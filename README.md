@@ -12,10 +12,6 @@ sudo chown -R $USER $PWD
 ```
 docker build --no-cache -t patrick204nqh/paboot .
 docker-compose up -d
-
-# use plugin
-./gradlew composeUp
-./gradlew composeDown
 ```
 
 - Run server
@@ -23,5 +19,5 @@ docker-compose up -d
 ./gradlew bootRun 
 
 # refresh dependencies
-./gradlew build --refresh-dependencies -x test
+./gradlew build --refresh-dependencies
 ```
